@@ -1,0 +1,43 @@
+<!-- <p>
+  view-employee-points works!???????????/
+</p> -->
+<!-- <p>הצגת עובדים </p>
+<label [(ngModel)]="worker"> -->    
+    <!-- <th>   מספר נקודות</th>  
+     <th>      שם משפחה</th>
+     <th>  שם פריטי</th>
+   <th >.ת.ז</th>
+           -->
+       
+    <br><br>
+  <div *ngFor="let worker of workers;"style="align-content:center">
+    
+        <h6><label>{{worker.id_worker}} .ת.ז</label></h6>
+     
+      <label> שם משפחה  :{{worker.last_name}}  </label>
+      <br>
+        <label >שם פרטי  : {{worker.first_name}}  </label>
+        <br>
+      <label>{{worker.num_of_credits}} מספר נקודות</label>
+       <br>
+       <br>
+    <div >
+
+      <!-- <tr style="all: center">
+         
+        </tr> -->
+        <!-- <td> <label>{{worker.num_of_credits}}</label></td>
+        <td><label>{{worker.last_name}}</label></td>  
+           <td ><label>{{worker.first_name}}</label></td>
+          <td> <label>{{worker.id_worker}}</label></td> -->
+     
+          
+          
+   
+  </div>
+    
+    
+   
+  </div>
+
+  <!-- <div>Single worker: {{worker.first_name}}</div> -->

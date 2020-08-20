@@ -1,0 +1,35 @@
+<!-- <p>
+  update-mishap works!
+</p> -->
+<p>הכנס תאור תקלה </p>
+<input value="הכנס תקלה" [(ngModel)]="mishap.mishap_description" type="text">
+
+<p>הכנס מספר נקודות של תקלה </p>
+<input value="הכנס מספר נקודות של תקלה " [(ngModel)]="mishap.num_of_credits" type="number" min="1" max="30"> 
+
+<p>הכנס דחיפות תקלה </p>
+<input value="הכנס דחיפות תקלה" [(ngModel)]="mishap.mishap_urgency" type="number" min="1" max="10">
+<p>הכנס מצב תקלה </p>
+<input value="1" [(ngModel)]="mishap.mishap_status_code" type="radio" id="1"> בהמתנה 
+<br>
+<input value="2" [(ngModel)]="mishap.mishap_status_code" type="radio" id="2"> פעיל 
+<br>
+<input value="3" [(ngModel)]="mishap.mishap_status_code" type="radio" id="3"> התקדמות  
+<br>
+<input value="4" [(ngModel)]="mishap.mishap_status_code" type="radio" id="4"> סיום  
+<!-- <input type="checkbox" id="1"
+       [ngModel]="filter" (ngModelChange)="onFilterChange($event)"> Checkbox -->
+
+<!-- <button (click)="onFilterChange($event)">Change Status</button>  -->
+<!-- <input type="file" class="btn btn-default" (change)="saveImage($event)" >
+<img [src]="mishap.mishap_img">   -->
+<!-- <app-home ngFor mishap=></app-home> -->
+<p></p>
+
+
+<!-- save mishap- -->
+ 
+<button (click)="saveMishap()">שמירת תקלה</button>
+<!-- <label>{{mishap}}</label> -->
+<!-- <a href="/update-malfunction">jjj</a> -->
+<!-- (keyup)="onKey($event)" -->
