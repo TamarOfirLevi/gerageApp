@@ -1,6 +1,9 @@
 <!-- <p>
   update-mishap works!
 </p> -->
+<p>הכנס מספר רכב </p>
+<input value="הכנס מספר רכב" [(ngModel)]="mishap.car_number" type="text">
+
 <p>הכנס תאור תקלה </p>
 <input value="הכנס תקלה" [(ngModel)]="mishap.mishap_description" type="text">
 
@@ -26,9 +29,10 @@
 <!-- <app-home ngFor mishap=></app-home> -->
 <p></p>
 
-
+<p>הכנס מחיר</p>
+<input value="הכנס מחיר" [(ngModel)]="mishap.mishap_price" type="text">
 <!-- save mishap- -->
- 
+<p></p>
 <button (click)="saveMishap()">שמירת תקלה</button>
 <!-- <label>{{mishap}}</label> -->
 <!-- <a href="/update-malfunction">jjj</a> -->

@@ -1,13 +1,14 @@
 export class mishap{
 
  public     mishap_code : number;
+ public car_number : string;
  public  mishap_description : string;
  public  num_of_credits :number;
  public  mishap_urgency :number;
  public   mishap_status_code :number;
    mishap_img :any;
  public  Mishap_Status :Mishap_Status;
-
+public mishap_price : number;
 
  public insertImg(img: String){
     this.mishap_img=String.toString()
