@@ -5,9 +5,9 @@ export class mishap{
  public  mishap_description : string;
  public  num_of_credits :number;
  public  mishap_urgency :number;
- public   mishap_status_code :number;
+ public   mishap_status_code :Mishap_status;
    mishap_img :any;
- public  Mishap_Status :Mishap_Status;
+ public  Mishap_status :Mishap_status;
 public mishap_price : number;
 
  public insertImg(img: String){
@@ -16,10 +16,10 @@ public mishap_price : number;
 
 
 }
-export class Mishap_Status
+export class Mishap_status
 {
-    mishap_status_code: number
-    description_of_the_status: string
+    public mishap_status_code: number
+    public description_of_the_status: string
 }
 export class worker{
     id_worker :string;

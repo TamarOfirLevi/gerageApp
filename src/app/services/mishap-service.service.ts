@@ -20,7 +20,7 @@ export class MishapServiceService {
   constructor(private httpService: HttpClient/*,private http: Http*/) { }
 
   getMishaps(){
-   return this.httpService.get("http://localhost:38864/mishap/all")
+   return this.httpService.get("http://localhost:38864/mishaps/all")
   }
   getMishapsByCode(code){
 return this.httpService.get("http://localhost:38864/mishap/"+code);

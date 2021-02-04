@@ -33,6 +33,7 @@ import { StartComponent } from './component/start/start.component';
 import { NewUserComponent } from './component/new-user/new-user.component';
 import { CustomersComponent } from './customers/customers.component';
 
+
 ///////////////////// import { Http, Headers, RequestOptions } from '@angular/http';
 // import { FirstNameComponent } from './first-name/first-name.component';
 // import { PasswordComponent } from './password/password.component';
@@ -115,7 +116,8 @@ const AppRoutes: Routes =[
     ToManageComponent,
     StartComponent,
     NewUserComponent,
-    CustomersComponent
+    CustomersComponent,
+ 
   
 
     
