@@ -16,7 +16,7 @@ export class ViewMyPointsComponent implements OnInit {
 //points:any = [];
 public worker: worker;
 public workers: worker[]; 
-  workerId=HomeComponent.prototype.workerId;
+id_worker=HomeComponent.prototype.id_worker;
   constructor(private workerserv: WorkerServiceService/*public serv:PointsService, private route: ActivatedRoute, private router: Router*/) { }
 
   getWorkerById(id){
@@ -26,7 +26,7 @@ public workers: worker[];
     })
   }
   ngOnInit() {
-     this.getWorkerById(this.workerId);
+     this.getWorkerById(this.id_worker);
   }
   // getPoints(){
   //   this.points=[];

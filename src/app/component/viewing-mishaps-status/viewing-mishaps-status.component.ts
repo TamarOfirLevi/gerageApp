@@ -45,7 +45,7 @@ deleteMishapByCode(code){
   ngOnInit() {
     //this.workers= this.workerserv.getWorkers();
     this.getMishaps();
-    this.getMishapsByCode("22");
+    //this.getMishapsByCode("22");
     // this.deleteMishapByCode("10");טוב 
     console.log(this.mishap);
   }

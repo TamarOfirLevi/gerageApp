@@ -1,3 +1,5 @@
+//import { applyMixins } from "rxjs/internal-compatibility";
+
 export class mishap{
 
  public     mishap_code : number;
@@ -7,7 +9,7 @@ export class mishap{
  public  mishap_urgency :number;
  public   mishap_status_code :Mishap_status;
    mishap_img :any;
- public  Mishap_status :Mishap_status;
+ //public  Mishap_status :Mishap_status;
 public mishap_price : number;
 
  public insertImg(img: String){
@@ -18,35 +20,35 @@ public mishap_price : number;
 }
 export class Mishap_status
 {
-    public mishap_status_code: number
-    public description_of_the_status: string
+    public mishap_status_code: number;
+    public description_of_the_status: string;
 }
 export class worker{
-    id_worker :string;
-    first_name: string;
-    last_name: string ;
-    tel_number: string;
-    adress: string;
-    num_of_credits:number;
-    password : string;
-    Employee_Status: Employee_Status;
+    public id_worker :number;
+    public num_of_credits:number;
+    public Employee_kind: Employee_kind;
+    public id_user : Users;
+    public Users : Users;
+  //Employee_kind: any;
+   // Employee_Status: Employee_Status;
 }
 
-export class Employee_Status
+export class Employee_kind
 {
-    employee_status_code: number
-    description_of_the_status: string
+    public employee_kind_code: number;
+    public description_of_the_kind: string;
 }
 
-export class Customers 
+export class Users 
 {
-id_customers:string;
-first_name:string;
-last_name :string;
-tel_number :string;
-adress :string;
-car_number :number;
-mail_adress :string;
+public id_user:string;
+public first_name:string;
+public last_name :string;
+public tel_number :string;
+public address :string;
+public registertion_date :Date;
+public mail_address :string;
+public password :string;
 }
 
 /*export class Users_Status

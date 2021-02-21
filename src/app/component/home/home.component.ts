@@ -16,7 +16,7 @@ private userName:string;
 private password: string;
 private user: worker;
 //private users: Customers;/////////////////
-public workerId=this.userName;
+public id_worker;
 //public mail_adress=this.userName;
   constructor(private loginServise:UserLoginService, private router: Router) { }
 // private user:worker;
@@ -26,7 +26,7 @@ public workerId=this.userName;
     //var reg=new RegExp('[^@]+@[^\.]+\..+');
     this.loginServise.Login(this.userName, this.password).subscribe(result => {
       
-      this.workerId=this.userName;
+      this.id_worker=this.userName;
       //this.mail_adress=this.userName;
    //this.users=result as Customers;
    this.user=result as worker;
@@ -42,7 +42,8 @@ else*/
 
 /**/
 //הוא הולך לעובד ושם נעשה את החלוקה בין מנהל לעובד ע"יSWITCH
-switch ((this.user.Employee_Status.employee_status_code)){
+//switch ((this.user.Employee_Status.employee_status_code)){
+  switch ((this.user.Employee_kind.employee_kind_code)){
 case 1:
 this.router.navigate(["/manager"]);
 break;
