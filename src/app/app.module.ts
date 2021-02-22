@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router'
 // import { AppRoutingModule } from './app-routing.module';
+import { Response } from '@angular/http';
 import { AppComponent } from './app.component';
  import { FormsModule } from '@angular/forms';
 import {HomeComponent} from './component/home/home.component';
@@ -32,6 +33,7 @@ import { ToManageComponent } from './component/to-manage/to-manage.component';
 import { StartComponent } from './component/start/start.component';
 import { NewUserComponent } from './component/new-user/new-user.component';
 import { CustomersComponent } from './customers/customers.component';
+import { UsersComponent } from './users/users.component';
 
 
 ///////////////////// import { Http, Headers, RequestOptions } from '@angular/http';
@@ -65,6 +67,7 @@ const AppRoutes: Routes =[
   {path:'information',component:InformationComponent},
   {path:'view-employee-points',component: ViewEmployeePointsComponent },
   {path:'start',component:StartComponent},
+  {path:'users',component:UsersComponent},
   // {path:'view-employee-points',component:ViewEmployeePointsComponent},
   {path:'information-of-mishap',component:InformationOfMishapComponent},
   {path:'manager',component:ManagerComponent ,children:[
@@ -117,6 +120,7 @@ const AppRoutes: Routes =[
     StartComponent,
     NewUserComponent,
     CustomersComponent,
+    UsersComponent,
  
   
 

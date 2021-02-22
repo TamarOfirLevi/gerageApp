@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { mishap } from '../classes';
 import {MishapServiceService } from 'src/app/services/mishap-service.service';
+import {LOCAL_STORAGE, WebStorageService} from 'angular-webstorage-service';
 
 @Component({
   selector: 'app-viewing-mishaps',
@@ -13,6 +14,8 @@ import {MishapServiceService } from 'src/app/services/mishap-service.service';
 export class ViewingMishapsComponent implements OnInit {
   public mishap:mishap;
   public mishaps:mishap[];
+
+
   constructor( private mishapserv: MishapServiceService) { }
   getMishaps(){
     this.mishapserv.getMishaps().subscribe(result => {

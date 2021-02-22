@@ -1,4 +1,9 @@
 <p>
   viewing-mishaps works!
 </p>
-<a type="button" class="btn btn-secondary" href="/select-a-mishap"  role="button">select-a-mishap בחר תקלה </a>
+<span>{{mishap.mishap_description}}</span>
+</br>
+<span>{{mishap.num_of_credits}}</span>
+</br>
+<span>{{mishap.}}</span>
+<a type="button" class="btn btn-secondary" *ngFor="let mishap of mishaps " href="/select-a-mishap"  role="button">select-a-mishap בחר תקלה </a>
