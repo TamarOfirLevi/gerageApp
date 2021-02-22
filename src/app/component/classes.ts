@@ -8,6 +8,7 @@ export class mishap{
  public  num_of_credits :number;
  public  mishap_urgency :number;
  public   mishap_status_code :Mishap_status;
+ public Mishap_status:Mishap_status;
    mishap_img :any;
  //public  Mishap_status :Mishap_status;
 public mishap_price : number;

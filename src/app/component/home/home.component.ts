@@ -5,6 +5,8 @@ import { UserLoginService } from 'src/app/services/user-login.service';
  //import { Customers } from '../classes';
 import { Router } from '@angular/router';
 import { from } from 'rxjs';
+import { Response } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -15,17 +17,23 @@ export class HomeComponent implements OnInit {
 private userName:string;
 private password: string;
 private user: worker;
+private userType : string; 
+private http : HttpClient;
 //private users: Customers;/////////////////
 public id_worker;
 //public mail_adress=this.userName;
   constructor(private loginServise:UserLoginService, private router: Router) { }
 // private user:worker;
   ngOnInit() {
+    
   }
   Login(){
+    
     //var reg=new RegExp('[^@]+@[^\.]+\..+');
     this.loginServise.Login(this.userName, this.password).subscribe(result => {
       
+    
+
       this.id_worker=this.userName;
       //this.mail_adress=this.userName;
    //this.users=result as Customers;
@@ -54,6 +62,7 @@ break;
 this.router.navigate(["/costemer"]);
 break;*/
 default:
+  this.router.navigate(["/users"]);
 }
 });
 
