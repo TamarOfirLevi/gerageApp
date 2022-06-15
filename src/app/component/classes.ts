@@ -28,8 +28,8 @@ export class worker{
     public id_worker :number;
     public num_of_credits:number;
     public Employee_kind: Employee_kind;
-    public id_user : Users;
-    public Users : Users;
+    public id_user : user;
+    public users : user;
   //Employee_kind: any;
    // Employee_Status: Employee_Status;
 }
@@ -40,7 +40,7 @@ export class Employee_kind
     public description_of_the_kind: string;
 }
 
-export class Users 
+export class user
 {
 public id_user:string;
 public first_name:string;
